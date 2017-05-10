@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/dongboowen/xiangmu#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-load-plugins": "^1.5.0"
   }
 }
