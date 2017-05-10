@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div {
   background-color: #c0c0c0;
 }
@@ -6,4 +7,44 @@ h1 {
 }
 p {
   color: #c0c0c0;
+=======
+.jd_db {
+  width: 100%;
+  height: 40px;
+  background: url("../../img/header-bg.png") repeat-x;
+  background-size: 1px 44px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+.jd_db .dyh {
+  height: 40px;
+  width: 40px;
+  font-size: 22px;
+  color: #737373;
+  position: absolute;
+}
+.jd_db .dyh:hover {
+  color: #0f0f0f;
+}
+.jd_db h2 {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: inherit;
+  text-align: center;
+  position: absolute;
+  top: -10px;
+}
+.jd_db .xlk {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #737373;
+  position: absolute;
+  right: 0;
+}
+.jd_db .xlk:hover {
+  color: #0f0f0f;
+>>>>>>> 233bcfee1f307af01d72cb8ad403e1302ca7cb25
 }
