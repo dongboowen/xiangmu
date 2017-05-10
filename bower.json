@@ -1,0 +1,20 @@
+{
+  "name": "jd_web",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "dongboowen <360642226@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dongboowen/xiangmu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.6.4"
+  }
+}
