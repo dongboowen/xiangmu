@@ -2,9 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>乐淘</title>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        body{
+            height: 2500px;
+        }
+    </style>
 </head>
 <body>
+<div class="container-fluid">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"><</a>
+        </div>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <input class="form-control" id="mysearch" placeholder="送妈妈送老婆，周大福为你选礼！" style="width: auto " >
+            </div>
+        </form>
+    </nav>
+    <div class="panel-body" style="width: 118px; float: left " >
+        <div class="list-group">
+            <a href="#" class="list-group-item " style="color: red" >热门推荐</a>
+            <a href="#" class="list-group-item">京东超市</a>
+            <a href="#" class="list-group-item">全球购</a>
+            <a href="#" class="list-group-item">男装</a>
+            <a href="#" class="list-group-item">女装</a>
+            <a href="#" class="list-group-item">男鞋</a>
+            <a href="#" class="list-group-item">女鞋</a>
+            <a href="#" class="list-group-item">内衣配饰</a>
+            <a href="#" class="list-group-item">箱包手袋</a>
+            <a href="#" class="list-group-item">美妆个护</a>
+            <a href="#" class="list-group-item">钟表珠宝</a>
+            <a href="#" class="list-group-item">手机数码</a>
+            <a href="#" class="list-group-item">电脑办公</a>
+            <a href="#" class="list-group-item">食品生鲜</a>
+            <a href="#" class="list-group-item">酒水饮料</a>
+            <a href="#" class="list-group-item">母婴童装</a>
+            <a href="#" class="list-group-item">玩具乐器</a>
+            <a href="#" class="list-group-item">医疗保健</a>
+            <a href="#" class="list-group-item">计生情趣</a>
+            <a href="#" class="list-group-item">户外运动</a>
+            <a href="#" class="list-group-item">汽车用品</a>
+            <a href="#" class="list-group-item">家具厨具</a>
+            <a href="#" class="list-group-item">家具家装</a>
+            <a href="#" class="list-group-item">鲜花礼品</a>
+            <a href="#" class="list-group-item">宠物生活</a>
+            <a href="#" class="list-group-item">生活旅行</a>
+            <a href="#" class="list-group-item">图书音像</a>
+            <a href="#" class="list-group-item">邮币</a>
+            <a href="#" class="list-group-item">农资绿植</a>
+            <a href="#" class="list-group-item">特产馆</a>
+            <a href="#" class="list-group-item">京东金融</a>
+            <a href="#" class="list-group-item">拍卖</a>
+            <a href="#" class="list-group-item">二手商品</a>
 
+        </div>
+    </div>
+    <div class="panel panel-default" style=" float: left;margin-top: 20px">
+        <div class="panel-body">
+            <img src="img/fldh.png ">
+        </div>
+    </div>
+    <div id="jd" style="position: absolute ;z-index: 4;top: 500px;left: 500px" ></div>
+    <div class="progress progress-striped  active col-lg-8 col-lg-offset-1" style="visibility: hidden;position: absolute ;top: 60px;left: 250px">
+    </div>
+</div>
 </body>
 </html>
