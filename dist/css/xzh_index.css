@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  font-family: "微软雅黑 Light";
+}
+body {
+  background-color: #f3f3f3 ;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ul li {
+  list-style: none;
+}
+.t_box {
+  min-width: 300px;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+/*顶部搜索*/
+.top {
+  height: 40px;
+  min-width: 300px;
+  max-width: 640px;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+}
+.top .h-search {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+.jd_logo {
+  position: absolute;
+  height: 30px;
+  width: 9%;
+  background-image: url("../../img/jdlogo.png");
+  background-size: cover;
+  left: 1%;
+  top: 3px;
+}
+.sousuo {
+  position: absolute;
+  top: 5px;
+  left: 12%;
+  width: 4%;
+  height: 25px;
+  z-index: 2;
+  background-image: url("../../img/sousuo.png");
+  background-size: 50px;
+}
+.top input {
+  width: 80%;
+  position: absolute;
+  left: 11%;
+  height: 30px;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 13px;
+  padding-left: 32px;
+  outline: none;
+}
+.top .login {
+  position: absolute;
+  right: -2%;
+  top: 8px;
+  font-size: 16px;
+  width: 10%;
+  margin-left: 4px;
+}
+/*轮播图*/
+.lbt {
+  position: relative;
+  top: 0px;
+}
+/*分类*/
+.jd_nav {
+  background-color: #fbfce9;
+  height: 160px;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+.jd_nav ul {
+  width: 100%;
+  position: relative;
+  left: -3%;
+  padding-top: 2%;
+}
+.jd_nav ul li {
+  width: 25%;
+  height: 69px;
+  float: left;
+}
+.jd_nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.jd_nav ul li a img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+.jd_nav ul li a p {
+  font-size: 12px;
+  color: #666;
+}
