@@ -8,8 +8,9 @@
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/index.css">
+    <script src="../app/scripts/index.js"></script>
 </head>
-<body>
+<body onload="time_fun()">
     <div class="t_box" style="height: 2000px">
         <div class="top">
             <a href="#"class="jd_logo"></a>
@@ -29,7 +30,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="../img/l3.jpg" alt="First slide">
+                    <img src="../img/l6.jpg" alt="First slide">
                 </div>
                 <div class="item">
                     <img src="../img/l2.jpg" alt="Second slide">
@@ -91,7 +92,67 @@
                     </a>
                 </li>
             </ul>
+            <div class="citiao">
+                <p style="position: absolute;left: 3%;top: 20%;height: 20px;width: 5%">京东</p>
+                <p class="kuaibao">快报</p>
+            <marquee class="marquee" behavior="scroll" direction="up" height="30"scrollamount="2"scrolldelay="200">
+                <p class="ct">
+                恭祝你福寿与天齐，庆贺你生辰快乐。年年都有今...
+                </p>
+            </marquee>
+                <p style="position: absolute; left: 85%;top: 20%;height: 20px;width: 5%">|</p>
+                <a style="position: absolute; left: 89%;top: 20%;height: 20px;width: 5%">更多</a>
+            </div>
         </nav>
+        <!--商品栏-->
+        <div class="spl">
+            <div class="top_spl">
+                <a class="jdms"></a>
+                <p>：12点场</p>
+                <h4 id="mytime">00:00:00</h4>
+                <a style="position: absolute;left: 86%;top:25%;color: red;font-size: 12px;font-weight:bold;">查看更多></a>
+            </div>
+            <nav class="m_spl">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../img/s2.jpg"style="height: 150px;width: 150px">
+                            <h4>¥69</h4>
+                            <p style="left: 18%;background-color: #e87732">好货</p>
+                        </a>
+                        <font style="text-decoration:line-through;">¥129</font>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/s4.jpg"style="height: 150px;width: 150px">
+                            <h4>¥699</h4>
+                            <p style="left: 50%;background-color:#31adb0">精选</p>
+                        </a>
+                        <font style="text-decoration:line-through;">¥899</font>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/s5.jpg"style="height: 150px;width: 150px">
+                            <h4>¥5699</h4>
+                            <p style="left: 83%;background-color:#8818e8">推荐</p>
+                        </a>
+                        <font style="text-decoration:line-through;">¥7699</font>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--广告-->
+        <div>
+            <a href="#">
+            <img src="../img/big.PNG"style="position: absolute;top:40.8%;width: 100%">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="../img/big2.PNG"style="position: absolute;top:58%;width: 100%">
+            </a>
+        </div>
     </div>
+
 </body>
 </html>
