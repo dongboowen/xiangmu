@@ -79,10 +79,15 @@ ul li {
 }
 /*分类*/
 .jd_nav {
-  background-color: #fbfce9;
-  height: 160px;
+  background-color: #e5e8d3;
+  height: 280px;
   width: 100%;
   border-bottom: 1px solid #e0e0e0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  top: -0.5%;
+  box-shadow: 0px -9px 20px #353531;
 }
 .jd_nav ul {
   width: 100%;
@@ -94,6 +99,7 @@ ul li {
   width: 25%;
   height: 69px;
   float: left;
+  margin-top: 20px;
 }
 .jd_nav ul li a {
   display: block;
@@ -103,11 +109,100 @@ ul li {
 }
 .jd_nav ul li a img {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin: 0 auto;
 }
 .jd_nav ul li a p {
   font-size: 12px;
   color: #666;
+}
+.citiao {
+  position: relative;
+  height: 35px;
+  top: 66%;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}
+.marquee {
+  position: absolute;
+  width: 80%;
+  left: 0;
+}
+.ct {
+  position: absolute;
+  left: 23%;
+  color: black;
+}
+.kuaibao {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 19px;
+  width: 5%;
+  background-color: red;
+  position: absolute;
+  left: 9%;
+  top: 22%;
+}
+/*商品栏*/
+.spl {
+  position: relative;
+  top: -1.2%;
+  height: 260px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.top_spl {
+  height: 30px;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.jdms {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  height: 22px;
+  width: 11%;
+  background-image: url("../../img/jdms.PNG");
+}
+.top_spl p {
+  font-weight: bolder;
+  position: absolute;
+  top: 25%;
+  left: 11%;
+}
+#mytime {
+  position: absolute;
+  top: -5%;
+  left: 21%;
+  text-align: center;
+}
+.m_spl ul li {
+  width: 33%;
+  height: 100px;
+  float: left;
+}
+.m_spl h4 {
+  color: red;
+  font-family: "Gill Sans Ultra Bold Condensed";
+  font-weight: bolder;
+}
+.m_spl p {
+  position: absolute;
+  top: 77%;
+  text-align: center;
+  height: 20px;
+  width: 8%;
+  color: white;
+  border: none;
+  border-radius: 10px;
 }
