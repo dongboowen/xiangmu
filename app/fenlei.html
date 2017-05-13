@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京西商品分类</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        body{
+            height: 2500px;
+        }
+        li{list-style:none;}
+        .jd-category-style-1 li{
+            float: left ;
+        }
+    </style>
+</head>
+<body>
+<div class="table-responsive" >
+    <table class="table" style="height: 30px;position:relative ; z-index: 100" >
+        <tbody>
+        <tr style="background-color:#e7e7e7  " >
+            <td>
+                <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            </td>
+            <td>
+                <div class="form-group">
+                    <input class="form-control" id="mysearch" placeholder="送妈妈送老婆，周大福为你选礼！" style="position: relative ;width: 90% ;float: left;margin-top:8px  " >
+                </div>
+            </td>
+            <td>
+                <div class="navbar-header" style="position: relative ;width: 5%;float: left;margin-top: 0px ">
+                    <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-align-justify"></span></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+        </tbody>
+    </table>
+</div>
+    <div class="panel-body" id="a" style="position: relative ;top: -30px; width: 180px; float: left;margin-left: -50px;  " >
+        <div class="list-group">
+            <ul>
+              <li><div class="list-group-item " style="color: red" >热门推荐</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">京东超市</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">全球购</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">男装</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">女装</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">男鞋</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">女鞋</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">内衣配饰</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">箱包手袋</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">美妆个护</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">钟表珠宝</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">手机数码</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">电脑办公</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">食品生鲜</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">酒水饮料</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">母婴童装</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">玩具乐器</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">医疗保健</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">计生情趣</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">户外运动</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">汽车用品</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">家具厨具</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">家具家装</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">鲜花礼品</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">宠物生活</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">生活旅行</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">图书音像</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">邮币</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">农资绿植</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">特产馆</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">京东金融</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">拍卖</div></li>
+              <li><div class="list-group-item" type="button" onclick="up()">二手商品</div></li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-default" style=" float: left;margin-top: 0px;">
+        <div class="panel-body">
+            <img src="img/fldh.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场推荐</h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1" href="#">
+                    <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2" href="#">
+                    <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3" href="#">
+                    <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类</h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div id="jd" style="position: absolute ;z-index: 4;top: 500px;left: 500px" ></div>
+    <div class="progress progress-striped  active col-lg-8 col-lg-offset-1" style="visibility: hidden;position: absolute ;top: 60px;left: 250px">
+    </div>
+<script>
+    var distance=50;
+    function up(){
+        a.style.top = (parseInt(a.style.top) - distance) + "px";
+    }
+</script>
+</body>
+</html>
