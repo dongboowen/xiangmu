@@ -11,12 +11,13 @@
     <script src="../app/scripts/index.js"></script>
 </head>
 <body onload="time_fun()">
-    <div class="t_box" style="height: 2000px">
-        <div class="top">
-            <a href="#"class="jd_logo"></a>
+    <div class="t_box">
+        <div class="top1"id="top1">
+
             <form class="h-search" id="h-search">
-                <span class="sousuo"></span>
-                <input type="text" placeholder="恭祝你福寿与天齐" />
+                <a href="#"><img class="jd_logo" src="../img/jdlogo.png"></a>
+                <a href="#"><img class="sousuo" src="../img/sousuo.png"></a>
+                <input type="text"class="hh" placeholder="恭祝你福寿与天齐" />
                 <a href="#" class="login" style="color: white">登陆</a>
             </form>
         </div>
@@ -93,30 +94,30 @@
                 </li>
             </ul>
             <div class="citiao">
-                <p style="position: absolute;left: 3%;top: 20%;height: 20px;width: 5%">京东</p>
-                <p class="kuaibao">快报</p>
-            <marquee class="marquee" behavior="scroll" direction="up" height="30"scrollamount="2"scrolldelay="200">
+                <p class="kuaibao"><img src="../img/jdkb.png"></p>
+            <marquee class="marquee" behavior="scroll" direction="up"height="35px" scrollamount="2"scrolldelay="200">
                 <p class="ct">
                 恭祝你福寿与天齐，庆贺你生辰快乐。年年都有今...
                 </p>
             </marquee>
-                <p style="position: absolute; left: 85%;top: 20%;height: 20px;width: 5%">|</p>
-                <a style="position: absolute; left: 89%;top: 20%;height: 20px;width: 5%">更多</a>
+                <p style="position: absolute; left: 85%;top: 20%;height: 20px;width: 1%">|</p>
+                <a style="position: absolute; left: 89%;top: 20%;height: 20px;width: 10%">更多</a>
             </div>
         </nav>
         <!--商品栏-->
         <div class="spl">
             <div class="top_spl">
-                <a class="jdms"></a>
+                <a ><img class="jdms" src="../img/jdms.PNG"></a>
                 <p>：12点场</p>
                 <h4 id="mytime">00:00:00</h4>
-                <a style="position: absolute;left: 86%;top:25%;color: red;font-size: 12px;font-weight:bold;">查看更多></a>
+                <a style="position: absolute;left: 82%;top:25%;width: 18%;
+                color: red;font-size: 12px;font-weight:bold;">查看更多></a>
             </div>
             <nav class="m_spl">
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="../img/s2.jpg"style="height: 150px;width: 150px">
+                            <img src="../img/s2.jpg"style="height: 150px;width: 85%">
                             <h4>¥69</h4>
                             <p style="left: 18%;background-color: #e87732">好货</p>
                         </a>
@@ -124,7 +125,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="../img/s4.jpg"style="height: 150px;width: 150px">
+                            <img src="../img/s4.jpg"style="height: 150px;width: 85%">
                             <h4>¥699</h4>
                             <p style="left: 50%;background-color:#31adb0">精选</p>
                         </a>
@@ -132,7 +133,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="../img/s5.jpg"style="height: 150px;width: 150px">
+                            <img src="../img/s5.jpg"style="height: 150px;width: 85%">
                             <h4>¥5699</h4>
                             <p style="left: 83%;background-color:#8818e8">推荐</p>
                         </a>
@@ -140,19 +141,68 @@
                     </li>
                 </ul>
             </nav>
+            <!--广告-->
+            <div>
+                <a href="#">
+                    <img src="../img/big.PNG"style="position: absolute;top:100%;left: 0;height:135%;width: 100%">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="../img/nbig2.PNG"style="position: absolute;top:233%;left: 0;height:120%;width: 100%">
+                </a>
+            </div>
         </div>
-        <!--广告-->
-        <div>
-            <a href="#">
-            <img src="../img/big.PNG"style="position: absolute;top:40.8%;width: 100%">
+        <div class="bottom1">
+            <a>点击继续加载</a>
+        </div>
+        <div class="bottom2">
+            <table>
+                <tr>
+                    <td><a>登录</a></td>
+                    <td><a>注册</a></td>
+                    <td><a>反馈</a></td>
+                    <td><a>回到顶部</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="zh">
+            <a >
+                <img src="../img/bottom.png">
             </a>
         </div>
-        <div>
-            <a href="#">
-                <img src="../img/big2.PNG"style="position: absolute;top:58%;width: 100%">
-            </a>
         </div>
+    <!--底部样式-->
+    <div class="jd_footer">
+        <table style="width: 100%;height: 100%">
+            <tr style="width: 100%;text-align: center">
+                <td>
+                    <a href="#">
+                        <img src="../img/home_fill2.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img src="../img/sort_light.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img src="../img/hot.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img src="../img/cart_light.png">
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img src="../img/people.png">
+                    </a>
+                </td>
+            </tr>
+        </table>
     </div>
-
 </body>
 </html>
