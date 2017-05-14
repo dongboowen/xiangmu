@@ -1,0 +1,3127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京西商品分类</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        body{
+            height: 2500px;
+        }
+        li{list-style:none;}
+        .jd-category-style-1 li{
+            float: left ;
+        }
+    </style>
+</head>
+<body>
+<div class="table-responsive" style="margin-top: -1px;"  >
+    <table class="table" style="position:relative ; z-index: 100;" >
+        <tbody>
+        <tr style="background-color:#dbdbdb  " >
+            <td>
+                <div style="position: relative ; margin-top:3px">
+                <a href="#" class=""  ><span class="glyphicon glyphicon-chevron-left"></span></a>
+                </div>
+            </td>
+            <td>
+                <div class="form-group" >
+                    <input class="form-control" id="mysearch" placeholder="送妈妈送老婆，周大福为你选礼！" style="position: relative ;width: 90% ;float: left;margin-top:-3px;margin-left: 20px  " >
+                </div>
+            </td>
+            <td>
+                    <div  class="" style="position: relative ; margin-top:3px">
+                        <div class=" " id=""  type="button" onclick="show1()">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+                        </div>
+                    </div>
+            </td>
+        </tr>
+        <tr>
+        </tbody>
+    </table>
+</div>
+<!--xlcd-->
+<div class="table-responsive" style="display: none;position: relative ;margin-top: -17px;z-index:1001  " id="b1">
+    <table class="table">
+        <tbody>
+        <tr style="background-color:#444444    " >
+            <td>
+                <a href="#" class="navbar-brand" style="color: white ;text-align: center;margin-top: -10px;position: relative   " ><span class="glyphicon glyphicon-home"></span><br>主页</a>
+            </td>
+            <td style="background-color:#101010     ">
+                <a href="#" class="navbar-brand" style="color: white ;text-align: center;margin-top: -10px" ><span class="glyphicon glyphicon-search"></span><br>分类搜索</a>
+            </td>
+            <td>
+                <a href="#" class="navbar-brand" style="color: white ;text-align: center;margin-top: -10px"><span class="glyphicon glyphicon-shopping-cart"></span><br>购物车</a>
+            </td>
+            <td>
+                <a href="#" class="navbar-brand" style="color: white ;text-align: center;margin-top: -10px"><span class="glyphicon glyphicon-user"></span><br>我的京东</a>
+            </td>
+        </tr>
+        <tr>
+        </tbody>
+    </table>
+</div>
+<div class="panel-body" id="a" style="position: relative ;top: -33px; width: 150px; float: left;margin-left: -15px;  " >
+    <div class="list-group">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab" class="list-group-item " style="color: red;text-align: center " >热门推荐</a></li>
+            <li><div href="#aboutus" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up()">京东超市</div></li>
+            <li><div href="#list3" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up1()">&nbsp&nbsp全球购&nbsp</div></li>
+            <li><div href="#list4" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up2()">&nbsp&nbsp&nbsp男装&nbsp&nbsp&nbsp&nbsp</div></li>
+            <li><div href="#list5" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up3()">&nbsp&nbsp&nbsp女装&nbsp&nbsp&nbsp&nbsp</div></li>
+            <li><div href="#list6" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up4()">&nbsp&nbsp&nbsp男鞋&nbsp&nbsp&nbsp&nbsp</div></li>
+            <li><div href="#list7" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up5()">&nbsp&nbsp&nbsp女鞋&nbsp&nbsp&nbsp&nbsp</div></li>
+            <li><div href="#list8" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up6()">内衣配饰</div></li>
+            <li><div href="#list9" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up7()">箱包手袋</div></li>
+            <li><div href="#list10" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up8()">美妆个护</div></li>
+            <li><div href="#list11" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up9()">钟表珠宝</div></li>
+            <li><div href="#list12" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up10()">手机数码</div></li>
+            <li><div href="#list13" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up11()">电脑办公</div></li>
+            <li><div href="#list14" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up12()">食品生鲜</div></li>
+            <li><div href="#list15" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up13()">酒水饮料</div></li>
+            <li><div href="#list16" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up14()">母婴童装</div></li>
+            <li><div href="#list17" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up15()">玩具乐器</div></li>
+            <li><div href="#list18" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up16()">医疗保健</div></li>
+            <li><div href="#list19" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up17()">计生情趣</div></li>
+            <li><div href="#list20" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up18()">户外运动</div></li>
+            <li><div href="#list21" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up19()">汽车用品</div></li>
+            <li><div href="#list22" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up20()">家具厨具</div></li>
+            <li><div href="#list23" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up21()">家具家装</div></li>
+            <li><div href="#list24" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up22()">鲜花礼品</div></li>
+            <li><div href="#list25" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up23()">宠物生活</div></li>
+            <li><div href="#list26" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up24()">生活旅行</div></li>
+            <li><div href="#list27" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up25()">图书音像</div></li>
+            <li><div href="#list28" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up26()">邮币&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div></li>
+            <li><div href="#list29" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up27()">农资绿植</div></li>
+            <li><div href="#list30" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up28()">特产馆&nbsp&nbsp&nbsp&nbsp</div></li>
+            <li><div href="#list31" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up29()">京东金融</div></li>
+            <li><div href="#list32" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up30()">拍卖&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div></li>
+            <li><div href="#list33" data-toggle="tab" class="list-group-item" style="text-align: center " type="button" onclick="up31()">二手商品</div></li>
+        </ul>
+    </div>
+</div>
+<div class="tab-content" id="tabcontent" style=";position:relative ;z-index:999; " >
+    <!--1 -->
+    <div id="home" class=" tab-pane fade in active" style=" position: absolute ;margin-top: -15px;margin-left:28%">
+        <div class="" style="position:relative  ;margin-left:-4%  " >
+            <img class="img-responsive center-block" src="img/fldh.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:0px " >专场推荐 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class=" list-inline" style="width:90% " >
+                <li style="width:30% ; " >
+                    <a class="J_ping"  id="branch_1" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                    </a>
+                </li >
+                <li style="margin-left: 3%;text-align: center;width:30%">
+                    <a class="J_ping"  id="branch_2" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 3%;text-align: center;width:30%">
+                    <a class="J_ping" id="branch_3" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:0px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class=" list-inline" style="width:90%" >
+                <li  style="text-align: center;width:30% ;"  >
+                    <a class="J_ping"  id="branch_4" href="#">
+                        <img class="img-responsive center-block"  src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 3%;text-align: center;width:30% ;">
+                    <a class="J_ping"  id="branch_5" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 3%;text-align: center;width:30% ;">
+                    <a class="J_ping" id="branch_6" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class=" list-inline" style="width:90%">
+                <li style="text-align: center; width:30% "    >
+                    <a class="J_ping"  id="branch_7" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 3%;text-align: center;width:30% ">
+                    <a class="J_ping"  id="branch_8" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 3%;text-align: center;width:30% ">
+                    <a class="J_ping" id="branch_9" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px;width:30% ;">
+                    <a class="J_ping" id="branch_10" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--2 -->
+    <div id="aboutus" class=" tab-pane fade" style=" position: absolute ;margin-top: -15px;margin-left: 28%">
+        <div class="" style="position:relative  ;margin-left:-4%  ">
+            <img class="img-responsive center-block" src="img/fldh32.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:0px " >专场推荐 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class=" list-inline" style="width:90% " >
+                <li style="width:30% ; " >
+                    <a class="J_ping"  id="branch_221" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                    </a>
+                </li >
+                <li style="margin-left: 3%;text-align: center;width:30%">
+                    <a class="J_ping"  id="branch_222" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 3%;text-align: center;width:30%">
+                    <a class="J_ping" id="branch_223" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:0px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class=" list-inline" style="width:90%" >
+                <li  style="text-align: center;width:30% ;"  >
+                    <a class="J_ping"  id="branch_224" href="#">
+                        <img class="img-responsive center-block"  src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 3%;text-align: center;width:30% ;">
+                    <a class="J_ping"  id="branch_225" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 3%;text-align: center;width:30% ;">
+                    <a class="J_ping" id="branch_226" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class=" list-inline" style="width:90%">
+                <li style="text-align: center; width:30% "    >
+                    <a class="J_ping"  id="branch_227" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 3%;text-align: center;width:30% ">
+                    <a class="J_ping"  id="branch_228" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 3%;text-align: center;width:30% ">
+                    <a class="J_ping" id="branch_229" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px;width:30% ;">
+                    <a class="J_ping" id="branch_2210" href="#">
+                        <img class="img-responsive center-block" src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--3 -->
+    <div id="list3" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh33.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_213" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_313" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_413" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_513" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_613" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_713" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_813" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_913" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_1013" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--4 -->
+    <div id="list4" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh1.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_211" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_311" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_411" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_511" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_611" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_711" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_811" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_911" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_1011" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--5 -->
+    <div id="list5" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh2.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_214" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_314" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_414" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_514" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_614" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_714" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_814" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_914" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_1014" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--6 -->
+    <div id="list6" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh3.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_215" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_315" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_415" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_515" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_615" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_715" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_815" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_915" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_1015" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--7 -->
+    <div id="list7" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh4.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_216" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_316" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_416" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_516" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_616" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_716" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_816" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_916" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_1016" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--8 -->
+    <div id="list8" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh5.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_217" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_317" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_417" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_517" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_617" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_717" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_817" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_917" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_1017" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--9 -->
+    <div id="list9" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh6.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_11" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_21" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_31" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_41111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_51111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_61111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_71111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_81111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_91111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_101111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--10 -->
+    <div id="list10" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh7.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_219" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_319" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_419" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_519" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_619" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_719" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_819" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_919" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_1019" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--11 -->
+    <div id="list11" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh8.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--12 -->
+    <div id="list12" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh9.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10112" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--13 -->
+    <div id="list13" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh10.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10113" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--14 -->
+    <div id="list14" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh12.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10114" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--15 -->
+    <div id="list15" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh13.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10115" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--16 -->
+    <div id="list16" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh14.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10116" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--17 -->
+    <div id="list17" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh15.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10117" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--18 -->
+    <div id="list18" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh16.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10118" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--19 -->
+    <div id="list19" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh17.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_5119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_6119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_8119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10119" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--20 -->
+    <div id="list20" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh18.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1120" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_2120" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_3120" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_411111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_511111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_611111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_711111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping"  id="branch_811111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 15%;text-align: center">
+                    <a class="J_ping" id="branch_9111111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_1011111" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--21 -->
+    <div id="list21" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh19.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10121" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--22 -->
+    <div id="list22" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh20.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10122" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--23 -->
+    <div id="list23" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh21.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10123" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--24 -->
+    <div id="list24" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh22.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10124" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--25 -->
+    <div id="list25" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh23.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10125" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--26 -->
+    <div id="list26" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh24.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10126" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--27 -->
+    <div id="list27" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh25.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10127" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--28 -->
+    <div id="list28" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh26.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10128" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--29 -->
+    <div id="list29" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh27.png">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10129" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--30 -->
+    <div id="list30" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10130" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--31 -->
+    <div id="list31" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh29.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10131" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--32 -->
+    <div id="list32" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh30.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10132" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--33 -->
+    <div id="list33" class="panel panel-default tab-pane fade" style=" float: left;margin-top: -15px;margin-left: -68px">
+        <div class="panel-body">
+            <img src="img/fldh31.png ">
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >专场 <span style="float:right " ><a class="text-muted"><span class="glyphicon glyphicon-trash"></span> 清空</a></span></h5>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center;" >
+                    <a class="J_ping"  id="branch_1133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px" >坚果Pro</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_2133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">5.10榴莲单品日</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_3133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">麻麻 我想对你说</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+        <div class="jd-category-div cur">
+            <h5 style="margin-left:15px " >热门分类<span style="float:right;color: #777777 "><a class="text-muted"><span class="glyphicon glyphicon-stats"></span> 排行榜<span class="glyphicon glyphicon-menu-right"></span></a></span></h5>
+            <ul class="jd-category-style-1">
+                <li  style="text-align: center"  >
+                    <a class="J_ping"  id="branch_4133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">手机</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_5133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">笔记本</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_6133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">空调</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+            <ul class="jd-category-style-1">
+                <li style="text-align: center"    >
+                    <a class="J_ping"  id="branch_7133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">收纳用品</span>
+                    </a>
+                </li >
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping"  id="branch_8133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">炒锅</span>
+                    </a>
+                </li>
+                <li style="margin-left: 10%;text-align: center">
+                    <a class="J_ping" id="branch_9133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">啤酒</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0%;text-align: center;position:relative ;top: 5px">
+                    <a class="J_ping" id="branch_10133" href="#">
+                        <img src="img/categorydef.png"><br>
+                        <span style="position:relative ; top: 5px">火车票</span>
+                    </a>
+                </li>
+                <div style="clear:both">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="jd" style="position: absolute ;z-index: 4;top: 500px;left: 500px" ></div>
+<div class="progress progress-striped  active col-lg-8 col-lg-offset-1" style="visibility: hidden;position: absolute ;top: 60px;left: 250px">
+</div>
+<script>
+    var distance=41;
+    function up(){
+        a.style.top = (parseInt(a.style.top) - distance) + "px";
+    };
+    ;
+    function up1(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*2) + "px";
+    };
+    function up2(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*3) + "px";
+    };
+    function up3(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*4) + "px";
+    };
+    function up4(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*5) + "px";
+    };
+    function up5(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*6) + "px";
+    };
+    function up6(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*7) + "px";
+    };
+    function up7(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*8) + "px";
+    };
+    function up8(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*9) + "px";
+    };
+    function up9(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*10) + "px";
+    };
+    function up10(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*11) + "px";
+    };
+    function up11(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*12) + "px";
+    };
+    function up12(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*13) + "px";
+    };
+    function up13(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*14) + "px";
+    };
+    function up14(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*15) + "px";
+    };
+    function up15(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*16) + "px";
+    };
+    function up16(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*17) + "px";
+    };
+    function up17(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*18) + "px";
+    };
+    function up18(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*19) + "px";
+    };
+    function up19(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*20) + "px";
+    };
+    function up20(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*21) + "px";
+    };
+    function up21(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*22) + "px";
+    };
+    function up22(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*23) + "px";
+    };
+    function up23(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*24) + "px";
+    };
+    function up24(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*25) + "px";
+    };
+    function up25(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*26) + "px";
+    };
+    function up26(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*27) + "px";
+    };
+    function up27(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*28) + "px";
+    };
+    function up28(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*29) + "px";
+    };
+    function up29(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*30) + "px";
+    };
+    function up30(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*31) + "px";
+    };
+    function up31(){
+        a.style.top= -30+"px";
+        a.style.top = (parseInt(a.style.top) - distance*32) + "px";
+    };
+    function show1(){
+        var b1=document.getElementById('b1')
+        if( b1.style.display==""|| b1.style.display=="block"){
+            b1.style.display = "none";
+        }else{
+            b1.style.display = "block";}
+    };
+</script>
+</body>
+</html>
