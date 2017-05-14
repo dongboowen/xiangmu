@@ -30,6 +30,7 @@ ul li {
   width: 100%;
   position: fixed;
   z-index: 9;
+  transition: background-color 1.5s linear 0.2s;
 }
 .top2 {
   background-color: rgba(216, 3, 0, 0.3);
@@ -259,7 +260,7 @@ ul li {
 }
 .zh img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 /*京东首页底部*/
 .jd_footer {
