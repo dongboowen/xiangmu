@@ -1,3 +1,6 @@
+body {
+  background-color: #e0e0e0;
+}
 .jd_db {
   width: 100%;
   height: 40px;
@@ -34,7 +37,7 @@
   color: #737373;
   padding: 8px 2px 12px;
   font-size: 20px;
-  display: inline-block;
+  display: block;
   position: absolute;
   right: 0;
 }
@@ -42,7 +45,7 @@
   display: inline-block;
 }
 .xlk1 {
-  display: none;
+  visibility: hidden;
   width: 100%;
   position: absolute;
   top: 40px;
@@ -65,11 +68,225 @@
   background-color: #000000;
 }
 .xlk:hover .xlk1 {
-  display: block;
+  visibility: visible;
+}
+.x {
+  height: 36px;
+  border-bottom: 1px solid #e0e0e0;
 }
 .ts {
+  background-color: white;
   width: 100%;
-  height: 30px;
+  height: 40px;
   position: relative;
   padding: 5px 0;
+  z-index: -1;
+}
+.spl {
+  background-color: white;
+  margin: 10px 1%;
+  width: 98%;
+  height: 380px;
+}
+.spl .fxk {
+  padding: 8px 5px;
+  float: left;
+}
+.spl .xk {
+  padding: 7px 5px;
+}
+.spl .xk .tip {
+  float: right;
+  color: tomato;
+}
+.jd_check_box {
+  height: 20px;
+  width: 20px;
+  display: block;
+  background: url("../../img/shop-icon.png") no-repeat;
+  background-size: 50px 100px;
+  background-position: -25px 0;
+}
+.jd_check_box[checked] {
+  background-position: -25px 0;
+}
+.xxk {
+  width: 100%;
+  height: 170px;
+  padding: 5px 0;
+}
+.xxk .xx {
+  padding: 50px 5px;
+  float: left;
+}
+.xxk .xx1 .xxx {
+  width: 50%;
+  display: inline-block;
+  font-size: 13px;
+  float: right;
+}
+.name1 {
+  word-wrap: break-word;
+}
+.name2 {
+  font-size: 12px;
+  font-weight: inherit;
+  color: #adadad;
+}
+.mn {
+  color: tomato;
+}
+.zj .sl {
+  float: left;
+}
+#tel,
+#tel1,
+#tel2,
+#tel3 {
+  width: 3em;
+}
+.zj .sl span {
+  height: 24px;
+  width: 26px;
+  border: 1px solid #9d9d9d;
+  text-align: center;
+  font-size: 14px;
+}
+.sl .slj {
+  float: left;
+}
+.sl .slz {
+  float: right;
+}
+.sc {
+  float: right;
+  width: 20%;
+}
+#sc1,
+#sc2,
+#sc3,
+#sc4 {
+  font-size: 20px;
+  color: #5e5e5e;
+}
+.link {
+  height: 1px;
+  width: 100%;
+  background-color: #dddddd;
+}
+.jd_option {
+  height: 57px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 999;
+}
+/*左侧  按钮*/
+.jd_option .option_check {
+  width: 60px;
+  height: 57px;
+  line-height: 57px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.jd_option .option_check .jd_check_box {
+  top: 20px;
+  left: 10px;
+  position: absolute;
+}
+.jd_option .option_check .jd_check_label {
+  margin-left: 35px;
+  font-size: 12px;
+}
+/*中间信息*/
+.jd_option .option_info {
+  width: 100%;
+  padding: 0 70px 0 70px;
+  height: 57px;
+  z-index: 199;
+}
+.jd_option .option_info .amount {
+  font-size: 16px;
+  line-height: 32px;
+}
+.jd_option .option_info .amount_dec {
+  font-size: 10px;
+  opacity: 0.8;
+}
+/*右侧按钮*/
+.jd_option .option_submit {
+  width: 116px;
+  height: 57px;
+  line-height: 57px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  background: #f15353;
+  text-align: center;
+}
+.jd_option .option_submit a {
+  color: #fff;
+  font-size: 18px;
+}
+.jd_option .option_submit a span {
+  font-size: 12px;
+}
+/*弹窗*/
+.jd_win {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1001;
+}
+.jd_win_box {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  opacity: 0;
+}
+.jd_win_box .jd_win_box_con {
+  line-height: 74px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  color: #555555;
+  text-align: center;
+  margin: 0 20px;
+}
+.jd_win_box .jd_win_box_btn {
+  padding: 10px 20px;
+}
+.jd_win_box .jd_win_box_btn .cancel {
+  height: 36px;
+  width: 45%;
+  display: block;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 4px;
+  font-size: 16px;
+  float: left;
+}
+.jd_win_box .jd_win_box_btn .submit {
+  height: 36px;
+  width: 45%;
+  display: block;
+  background: #f15353;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 10%;
+  float: left;
 }

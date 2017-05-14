@@ -41,7 +41,7 @@ function scroll() {
 document.onscroll = function () {
     var dis = scroll().top;
     var div = document.getElementById("top1");
-  if(dis>160) {
+  if(dis>100) {
         div.className = "top1 top5";
     }else {
         div.className = "top1";
